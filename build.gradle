@@ -1,0 +1,15 @@
+apply plugin: 'java'
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.apache.curator:curator-framework:2.7.1'
+    compile 'org.apache.curator:curator-recipes:2.7.1'
+
+    testCompile 'junit:junit:4.+'
+}
